@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Vehiculo.js"></script>
+    <script src="./Auto.js"></script>
+    <script src="./Camioneta.js"></script>
+    <script src="./main.js"></script>
+    <script src="./Manejadora.js"></script>
+</head>
+
+<body>
+    </div>
+    <button id=idAlta>Alta</button>
+
+
+    <h1>Filtros</h1>
+
+    <div class="division"></div>
+    <div>
+        <label for="">Filtrar por:</label>
+
+        <select name="" id="selectFiltro">
+            <option value="Auto" selected>Auto</option>
+            <option value="Camioneta">Camioneta</option>
+            <option value="Todos">Todos</option>
+        </select>
+
+        <div class="division"></div>
+
+    </div>
+
+    <div>
+        <label id="texto1" for="">Promedio del precio:</label>
+        <div class="division"></div>
+
+    </div>
+
+    <div>
+        <h3>Campos Mostrados</h4>
+            <label id="texto2" for="">Tildar los campos a mostrar</label>
+    </div>
+
+    <div>
+        <input type="checkbox" checked>
+        <label for="Id">ID</label>
+
+        <input type="checkbox" checked>
+        <label for="Marca">Marca</label>
+
+        <input type="checkbox" checked>
+        <label for="Modelo">Marca</label>
+
+        <input type="checkbox" checked>
+        <label for="Precio">Marca</label>
+
+        <div class="division"></div>
+
+
+    </div>
+
+    <form id="form" class="invisible">
+
+
+        <h3>Alta Vehiculo</h3>
+        <!-- <button id=idCerrar>X</button> -->
+
+        <div>
+            <!-- <label for="Nombre">Nombre</label> -->
+            <input type="text" name="Id" id="Id" placeholder="ID">
+        </div>
+
+        <div>
+            <!-- <label for="Apellido">Apellido</label> -->
+            <input type="text" name="Marca" id="idMarca" placeholder="Marca">
+        </div>
+
+        <div>
+            <!-- <label for="Edad">Edad</label> -->
+            <input type="text" name="Modelo" id="idModelo" placeholder="Modelo">
+        </div>
+
+        <div>
+            <!-- <label for="Sexo">Dni</label> -->
+            <input type="text" name="Precio" id="idPrecio" placeholder="Precio">
+        </div>
+
+        <div>
+            <!-- <label for="Pais">Pais</label> -->
+            <select name="Tipo" id="idTipo">
+                <option value="Camioneta" selected>Camioneta</option>
+                <option value="Auto">Auto</option>
+                <option value="Todos">Todos</option>
+            </select>
+        </div>
+
+        <div id="Botones">
+            <button id=Agregar>Agregar</button>
+            <button id=Cerrar>Cerrar</button>
+        </div>
+    </form>
+
+
+    <h2>Lista de Vehiculos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</body>
+
+</html>
